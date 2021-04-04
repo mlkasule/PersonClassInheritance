@@ -31,7 +31,7 @@ public class Driver {
 			Student newStudent = new Student();
 
 			// ask for names
-			System.out.print("Enter a : ");
+			System.out.print("Enter a student's name: ");
 			input.nextLine();
 			String name = input.nextLine();
 
@@ -113,7 +113,6 @@ public class Driver {
 
 				// create a new faculty object
 				Faculty newFaculty = new Faculty();
-				MyDate newDateSet = new MyDate();
 
 				// ask for office number
 				System.out.print("Enter an office number: ");
@@ -138,7 +137,7 @@ public class Driver {
 				// set salary
 				newFaculty.setSalary(newSalary);
 				// set hire date
-				newDateSet.setDate(newHireDate);
+				newFaculty.setDate(newHireDate);
 				// set hours
 				newFaculty.setOfficeHrs(newOfficeHours);
 
@@ -151,9 +150,6 @@ public class Driver {
 				// print faculty
 				System.out.print(newFaculty);
 
-				// print date
-				System.out.println(newDateSet);
-
 				// print details
 				System.out.println("\nAddress: " + newEmployee.getAddress() + "\nPhone number: "
 						+ newEmployee.getPhoneNumber() + "\nEmail: " + newEmployee.getEmail());
@@ -162,7 +158,7 @@ public class Driver {
 
 				// create a new faculty object
 				Faculty newStaff = new Faculty();
-				MyDate newDateSet = new MyDate();
+
 				Staff staffRank = new Staff();
 
 				// ask for office number
@@ -188,7 +184,7 @@ public class Driver {
 				// set salary
 				newStaff.setSalary(newSalary);
 				// set hire date
-				newDateSet.setDate(newHireDate);
+				newStaff.setDate(newHireDate);
 				// set hours
 				newStaff.setOfficeHrs(newOfficeHours);
 				// set rank
@@ -202,9 +198,6 @@ public class Driver {
 
 				// print faculty
 				System.out.println(newStaff);
-
-				// print date
-				System.out.println(newDateSet);
 
 				// print details
 				System.out.println("Address: " + newEmployee.getAddress() + "\nPhone number: "

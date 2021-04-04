@@ -2,7 +2,7 @@
 public class Employee extends Person {
 	private int officeNumber;
 	private int salary;
-	private MyDate hired;
+	private String hired;
 
 	public Employee() {
 	}
@@ -10,7 +10,7 @@ public class Employee extends Person {
 	public Employee(int officeNumber, int salary, String newDate) {
 		this.officeNumber = officeNumber;
 		this.salary = salary;
-		hired = new MyDate(newDate);
+		hired = newDate;
 	}
 
 	public Employee(Employee emp) {
@@ -28,7 +28,11 @@ public class Employee extends Person {
 	}
 
 	public void setDate(String dateHired) {
-		hired = new MyDate(dateHired);
+		hired = dateHired;
+	}
+
+	public String getDate() {
+		return hired;
 	}
 
 	public int getOfficeNum() {
@@ -40,6 +44,7 @@ public class Employee extends Person {
 	}
 
 	public String toString() {
+
 		String str = "Professor: " + super.getName() + "\nAddress: " + super.getAddress() + "\nPhone number: "
 				+ super.getPhoneNumber() + "\nEmail Address: " + super.getEmail();
 

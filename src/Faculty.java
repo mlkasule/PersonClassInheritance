@@ -15,11 +15,19 @@ public class Faculty extends Employee {
 	}
 
 	public Faculty(String offHrs, String newRank) {
+		super(); //call the employee constructor
 		officeHours = offHrs;
 		rank = newRank;
 	}
+	public Faculty(String offHrs, String newRank, String wasHired) 
+	{
+		officeHours = offHrs;
+		rank = newRank;
+		setDate(wasHired);
+	}
 
 	public Faculty(Faculty newFacultyObj) {
+		super(newFacultyObj);
 		officeHours = newFacultyObj.officeHours;
 		rank = newFacultyObj.rank;
 	}
@@ -43,7 +51,7 @@ public class Faculty extends Employee {
 
 	public String toString() {
 
-		String str = "Rank: " + getRank() + "\nSalary: " + super.getSalary() + "\n" + "\nOffice Hours: "
+		String str = "Rank: " + getRank() + "\nSalary: " + super.getSalary() + "\nDate Hired: " + getDate() + "\n" + "\nOffice Hours: "
 				+ getOfficeHours() + "\nOffice: " + super.getOfficeNum();
 
 		return str;

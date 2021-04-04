@@ -22,18 +22,5 @@ public class MyDate {
 		date = newDate.date;
 	}
 
-	// METHODS
-	public void setDate(String newDate) {
-		date = newDate;
-	}
-
-	public String getDate() {
-		return date;
-	}
-
-	public String toString() {
-		String str = "Date Hired: " + date + "\n";
-		return str;
-	}
 
 }
