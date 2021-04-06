@@ -23,7 +23,7 @@ public class Faculty extends Employee {
 	{
 		officeHours = offHrs;
 		rank = newRank;
-		setDate(wasHired);
+		setDate(wasHired);	//set date hired
 	}
 
 	public Faculty(Faculty newFacultyObj) {
